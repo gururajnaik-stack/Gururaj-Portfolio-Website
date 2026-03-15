@@ -1,1 +1,417 @@
-<h1>Hello! My website is working.</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gururaj Ashok Naik - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">GA</span>
+                <span class="brand-text">Gururaj Naik</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Gururaj Naik</h1>
+                <h2 class="hero-subtitle">Data Analytics  | IT Engineering Student | SQL • Python • Tableau • Excel</h2>
+                <p class="hero-tagline">Mumbai, Maharashtra, India | Transforming data into actionable insights</p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                        <i class="fas fa-arrow-right"></i> View My Projects
+                    </button>
+                    <button class="btn btn-secondary" onclick="downloadResume()" href="Gururaj_Ashok_Naik_Resume.pdf" download>
+                        <i class="fas fa-download"></i> Download My Resume
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-database"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am an IT Engineering student with a strong foundation in data analytics, currently interning at Oasis Infobyte. My expertise spans exploratory data analysis, statistical modeling, and data visualization. I'm passionate about transforming complex datasets into actionable business insights.</p>
+                    <p>My skill set includes Python, SQL, Tableau, and Excel—tools that enable me to conduct thorough data analysis from cleaning and preprocessing to visualization and presentation. Whether building dashboards, performing statistical analysis, or developing data-driven solutions, I focus on delivering accurate, scalable, and impactful results.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>7.0</h3>
+                            <p>Current CGPA</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1</h3>
+                            <p>Internships</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Virtual Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Project Case Studies</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Expense Tracker with Data Visualization</h3>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Flask</span>
+                        <span class="tech-badge">Matplotlib</span>
+                        <span class="tech-badge">Pandas</span>
+                    </div>
+                    <p class="problem"><strong>The Problem:</strong> Manual tracking of finances is tedious and lacks visual insight.</p>
+                    <p class="solution"><strong>The Solution:</strong> Developed a web-based tracker that automates expense logging and generates real-time visual reports.</p>
+                    <p class="result"><strong>Key Result:</strong> Simplified personal budgeting through automated data categorization and trend analysis.</p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>HR Analytics Dashboard</h3>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Tableau</span>
+                        <span class="tech-badge">Excel</span>
+                        <span class="tech-badge">Data Analysis</span>
+                    </div>
+                    <p class="narrative"><strong>The Narrative:</strong> Transforming employee data into actionable HR insights through interactive dashboards.</p>
+                    <p class="highlight"><strong>Highlight:</strong> Designed an interactive HR Analytics dashboard to track employee performance metrics, attrition rates, departmental trends, and workforce demographics.</p>
+                    <p class="result"><strong>Key Result:</strong> Enabled data-driven HR decision-making through real-time performance visualization and trend analysis.</p>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Food Dataset - EDA & Visualization</h3>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Pandas</span>
+                        <span class="tech-badge">Matplotlib</span>
+                        <span class="tech-badge">Seaborn</span>
+                    </div>
+                    <p class="focus"><strong>Focus:</strong> Exploratory Data Analysis & Data Visualization</p>
+                    <p class="description">Conducted comprehensive exploratory data analysis on food datasets to uncover patterns in nutritional data, food categories, and consumer preferences. Generated insightful visualizations including distribution analysis, correlation matrices, and trend identification.</p>
+                    <p class="result"><strong>Key Result:</strong> Identified key nutritional patterns and consumer trends to support data-driven insights in the food industry.</p>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <h3>Netflix Content Analysis Dashboard</h3>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Tableau</span>
+                        <span class="tech-badge">Excel</span>
+                        <span class="tech-badge">Data Analysis</span>
+                    </div>
+                    <p class="narrative"><strong>The Narrative:</strong> Visualizing global streaming trends through interactive business intelligence dashboards.</p>
+                    <p class="highlight"><strong>Highlight:</strong> Built a comprehensive Netflix Content Analysis dashboard to visualize global viewership trends, content distribution by genre, IMDb ratings analysis, and release year trends across different regions.</p>
+                    <p class="result"><strong>Key Result:</strong> Provided actionable insights into content performance and viewer preferences to inform content strategy decisions.</p>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Smart Library Management System</h3>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">CustomTkinter</span>
+                        <span class="tech-badge">SQLite</span>
+                    </div>
+                    <p class="focus"><strong>Focus:</strong> UI/UX & Database Management</p>
+                    <p class="description">Built a desktop application with a modern dark-themed interface to manage book inventories and member records seamlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">HTML5</span>
+                        <span class="skill-item">CSS3</span>
+                        <span class="skill-item">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Data Science</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Pandas</span>
+                        <span class="skill-item">NumPy</span>
+                        <span class="skill-item">Matplotlib</span>
+                        <span class="skill-item">Seaborn</span>
+                        <span class="skill-item">Tableau</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Web Frameworks</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Flask</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">GitHub</span>
+                        <span class="skill-item">VS Code</span>
+                        <span class="skill-item">Excel</span>
+                        <span class="skill-item">Canva</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience & Certifications</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Software Engineering Virtual Experience</h3>
+                        <p class="company">JPMorgan Chase (via Forage)</p>
+                        <p class="description">Real-time data streaming and stock monitoring tools</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Data Analytics Internship</h3>
+                        <p class="company">Oasis Infobyte</p>
+                        <p class="description">February 2026 - Present | Mumbai, Maharashtra | Exploratory Data Analysis (EDA), Statistical Modeling, Data Cleaning & Preprocessing</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Deloitte Australia Data Analytics Job Simulation</h3>
+                        <p class="company">Deloitte</p>
+                        <p class="description">Data Analytics and Business Intelligence</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>JPMorgan Chase Software Engineering Virtual Experience</h3>
+                        <p class="company">JPMorgan Chase (via Forage)</p>
+                        <p class="description">Real-time data streaming and stock monitoring tools</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Google Analytics Certification</h3>
+                        <p class="company">Google Digital Academy (Skillshop)</p>
+                        <p class="description">Issued Feb 2026 | Expires Feb 2027 | Credential ID: 173828084</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Freelance Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Freelance Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Tableau Dashboard Design</h3>
+                    <p class="service-description">Custom interactive dashboards tailored to your business needs, featuring real-time visualizations, KPI tracking, and actionable insights.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Interactive Business Intelligence Dashboards</li>
+                        <li><i class="fas fa-check"></i> Data Visualization & Storytelling</li>
+                        <li><i class="fas fa-check"></i> Real-time Performance Tracking</li>
+                        <li><i class="fas fa-check"></i> Custom KPI Development</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data Analysis & EDA</h3>
+                    <p class="service-description">Comprehensive exploratory data analysis and statistical modeling to uncover hidden patterns and drive data-informed decisions.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Exploratory Data Analysis (EDA)</li>
+                        <li><i class="fas fa-check"></i> Statistical Modeling & Insights</li>
+                        <li><i class="fas fa-check"></i> Data Cleaning & Preprocessing</li>
+                        <li><i class="fas fa-check"></i> Python & SQL Analysis</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Data Solutions</h3>
+                    <p class="service-description">End-to-end data solutions including ETL pipelines, automation, and integration with your existing systems.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Data Pipeline Development</li>
+                        <li><i class="fas fa-check"></i> Data Automation & Scripts</li>
+                        <li><i class="fas fa-check"></i> Excel & Database Solutions</li>
+                        <li><i class="fas fa-check"></i> Business Intelligence Setup</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-cta">
+                <p>Interested in working together? Let's discuss your project!</p>
+                <a href="https://www.fiverr.com/gururajnaik2807" class="btn btn-primary" onclick="scrollToSection('contact')">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="contact-subtitle">I'm always open to exciting projects and collaborations. Reach out to me through any channel below!</p>
+
+            <!-- Contact Methods -->
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Get a response within 24 hours</p>
+                    <a href="mailto:gururajnaik2807@gmail.com" class="contact-link">gururajnaik2807@gmail.com</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect professionally</p>
+                    <a href="https://www.linkedin.com/in/gururajnaik-47b8a939b" class="contact-link" target="_blank">Visit Profile</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>Check out my projects</p>
+                    <a href="https://github.com/GururajNaik2807" class="contact-link" target="_blank">View Code</a>
+                </div>
+            </div>
+
+            <!-- Quick Action Section -->
+            <div class="quick-actions">
+                <h3>Not sure where to start?</h3>
+                <div class="action-buttons">
+                    <a href="mailto:gururajnaik2807@gmail.com?subject=Project%20Inquiry" class="action-btn">
+                        <i class="fas fa-pen-fancy"></i> Discuss a Project
+                    </a>
+                    <a href="https://www.fiverr.com/gururajnaik2807" target="_blank" class="action-btn">
+                        <i class="fas fa-briefcase"></i> Hire on Fiverr
+                    </a>
+                    <a href="https://www.linkedin.com/in/gururajnaik-47b8a939b" target="_blank" class="action-btn">
+                        <i class="fas fa-handshake"></i> Networking
+                    </a>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-section">
+                <p class="social-label">Follow & Connect</p>
+                <div class="social-links">
+                    <a href="https://github.com/GururajNaik2807" class="social-btn" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gururajnaik-47b8a939b" class="social-btn" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:gururajnaik2807@gmail.com" class="social-btn" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.fiverr.com/gururajnaik2807" class="social-btn" title="Fiverr">
+                        <i class="fas fa-briefcase"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Gururaj Ashok Naik. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
